@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido Embebido</title>
+
+    <!-- El tema de estilo pertenece a CSS-->
+    <style>
+        img {
+            max-width: 100%;
+            width: 150px;
+        }
+        video {
+            max-width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contenido Embebido</h1>
+    <h2>Gif</h2>
+    <img src="/contenido-embebido/assets/images/0c2a191157b824ba3c39b5625ff8f0c1.gif" alt="cachetes">
+
+    <h2>Vectores (Svg)</h2>
+    <img src="/contenido-embebido/assets/images/1664957902swan-silhouette-low-poly.svg" alt="cisne">
+
+    <!--DPR (Device Pixel Ratio) 
+        Es la relacion que existe entre los pixeles reales que tiene el dispositivo y los pixeles que tenemos disponibles para "pintar" contenido.
+
+        DPR = pixeles reales / pixeles disponibles
+    -->
+
+    <h2>Audio</h2>
+    <audio src="/contenido-embebido/assets/audio/Manuel Turizo - La Bachata.mp3" controls></audio>
+
+    <!-- Para que se reproduzca automaticamente cuando la persona abre la pagina-->
+    <br>
+    <audio src="/contenido-embebido/assets/audio/Manuel Turizo - La Bachata.mp3" controls autoplay></audio> 
+
+    <!-- Para que este muteado (como se puede en IG)-->
+    <br>
+    <audio src="/contenido-embebido/assets/audio/Manuel Turizo - La Bachata.mp3" controls autoplay muted></audio>
+    
+    <H2>Videos</H2>
+    <video src="/contenido-embebido/assets/video/y2mate.com - 4k UHD Clouds Timelapse_480p.mp4" controls></video>
+    <!-- Para modificar el tamano del video es con CSS, con HTML se puede pero NO SE DEBERIA -->
+
+    <!-- Para que se reproduzca automaticamente -->
+    <video src="/contenido-embebido/assets/video/y2mate.com - 4k UHD Clouds Timelapse_480p.mp4" controls autoplay></video>
+
+    <!-- Para que este muteado mientras se reproduce automaticamente-->
+    <video src="/contenido-embebido/assets/video/y2mate.com - 4k UHD Clouds Timelapse_480p.mp4" controls autoplay muted></video>
+
+    <!-- Para que una vez se termine, se vuelva a reproducir desde el principio -->
+    <video src="/contenido-embebido/assets/video/y2mate.com - 4k UHD Clouds Timelapse_480p.mp4" controls loop></video>
+
+    <!-- Para elegir la portada del video -->
+    <video src="/contenido-embebido/assets/video/y2mate.com - 4k UHD Clouds Timelapse_480p.mp4" controls poster="/contenido-embebido/assets/images/perro.jpg"></video>
+
+    <h2>Iframes</h2>
+    <!-- Es el codigo que nos deja copiar videos de otras paginas (youtube, IG, Fb, ya lo colocan el Iframe cuando le damos a la opcion compartir) No es buena idea sobrecargar una pagina con Iframes por el peso que representan-->
+    <h3>Ejemplo video de la clase en youtube:</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hAgrrW5LM6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Figure</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, error. Dolorum harum ullam obcaecati quidem soluta assumenda laudantium iusto totam laboriosam, facilis voluptates reprehenderit voluptatum sit consectetur qui. Illo, maxime?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti rerum distinctio voluptatem adipisci quia. Molestias, sint quae illum molestiae laborum ut, dolores porro dolorem praesentium inventore rerum dolorum unde veritatis.</p>
+    <figure>
+        <img src="https://img.freepik.com/foto-gratis/mujer-oficina-entusiasta-mujer-negocios-sosteniendo-computadora-portatil-gritando-alegria-celebrando-regocijandose-pie-sobre-fondo-blanco_1258-86049.jpg?w=996&t=st=1665956049~exp=1665956649~hmac=f319c9499c89f4a85e723e0f1b2937dda740e1813552904174b07bfc8ca506cc" alt="mujer">
+        <!-- Etiqueta para ponerle nombre a la imagen (es opcional) -->
+        <figcaption>Mujer feliz</figcaption>
+
+    </figure>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate harum animi laboriosam vero repudiandae reprehenderit ut! Cumque non eveniet minima, inventore itaque illo amet accusantium iusto, dignissimos a autem et.</p>
+
+</body>
+</html>

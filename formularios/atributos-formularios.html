@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos de los Formularios</title>
+</head>
+<!-- 
+    placeholder -> Da una pista de lo que el usuario tiene que introducir
+
+    required -> Hace que un campo sea obligatorio
+
+    readonly -> Hace que un campo sea de solo lectura
+
+    disabled -> Desactiva el campo, no se podra escribir en el autofocus
+
+    min - max -> Establece el minimo y maximo de un campo numerico
+
+    minlenght - maxlenght -> Establece el minimo y maximo de caracteres de un campo de taxto
+
+    selected -> Equivale a checked en los select, sirve para establecer una opcion por defecto
+
+    autofocus -> Para poner el foco por defecto al cargar el formulario 
+ -->
+<body>
+    <h1>Atributos de los Formularios</h1>
+     <form>
+        <h2>Placeholder</h2>
+        <input type="text" placeholder="Introduce tu nombre">
+        
+        <h2>Required</h2>
+        <input type="text" placeholder="Introduce tu nombre" required>
+        <input type="submit">
+
+        <h2>Readonly</h2>
+        <!-- No se puede borrar o modificar -->
+        <input type="text" value="Hola" readonly>
+
+        <h2>Disabled</h2>
+        <!-- Es como un campo congelado -->
+        <input type="text" value="Hola" disabled>
+
+        <h2>Min - Max</h2>
+        <!-- No es obligatorio que esten los dos, puede colocarse solo un rango -->
+        <input type="number" min="5" max="10">
+        <input type="submit">
+
+        <h2>Minlenght - Maxlenght</h2>
+        <input type="text" minlength="3" maxlength="5">
+        <input type="submit">
+
+        <h2>Selected</h2>
+        <select name="numbers">
+            <option value="one">One</option>
+            <option value="two" selected>Two</option>
+        </select>
+
+        <h2>Autofocus</h2>
+        <select name="numbers">
+            <option value="one">One</option>
+            <option value="two" selected>Two</option>
+        </select>
+
+     </form>
+</body>
+</html>
